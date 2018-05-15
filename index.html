@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="./resources/css/reset.css">
   <link rel="stylesheet" href="./resources/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700" rel="stylesheet">
   <meta charset="utf-8">
   <title>Colmar Academy</title>
 </head>
@@ -32,16 +33,20 @@
     </div>
   </header>
   <!-- Main Content -->
-  <div class="banner">
-    <div class="banner-img">
-      <img src="./resources/images/banner.jpg" alt="studying">
+  <section class="main-container">
+    <div class="banner">
+      <div class="banner-img">
+        <img src="./resources/images/banner.jpg" alt="studying">
+      </div>
+      <div class="text">
+        <h2>Learn something new everyday</h2>
+        <h3>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</h3>
+        <div class="start-here">
+          <p>Start Here</p>
+        </div>
+      </div>
     </div>
-    <h2>Learn something new everyday</h2>
-    <h3>Lorem ipsum dolor sit amet,consectetur adipiscing elit</h3>
-    <div class="start-here">
-      <p>Start Here</p>
-    </div>
-  </div>
+  </section>
   <!-- Information -->
   <div class="flex-container">
     <div id="info" class="flex-item">
@@ -50,66 +55,70 @@
       <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristque ligula"</p>
       <h6>Emanuel, Sr Strategist at Hiring.com</h6>
     </div>
-    <div id="orientation" class="flex-item">
-      <img src="./resources/images/information-orientation.jpg" alt="walking">
-      <h3>Orientation date</h3>
-      <h6>Tue 10/11 & Wed 10/12: 8am-3pm</h6>
-      <h5><a href="#">Read more</a></h5>
-    </div>
-    <div id="campus" class="flex-item">
-      <img src="./resources/images/information-campus.jpg" alt="atlas">
-      <h3>Our Campus</h3>
-      <h6>Find which campus is close to you</h6>
-      <h5><a href="#">read more</a></h5>
-    </div>
-    <div id="guest" class="flex-item">
-      <img src="./resources/images/information-guest-lecture.jpg" alt="guest speaker">
-      <h3>Our guest lecture</h3>
-      <h6>Join a keynote with Oliver sackabout music in medical treatment</h6>
-      <h5><a href="#"></a>read more</h5>
-    </div>
+    <section class="flex">
+      <div id="orientation" class="flex-item">
+        <img src="./resources/images/information-orientation.jpg" alt="walking">
+        <h3>Orientation date</h3>
+        <h6>Tue 10/11 & Wed 10/12: 8am-3pm</h6>
+        <h5><a href="#">read more</a></h5>
+      </div>
+      <div id="campus" class="flex-item">
+        <img src="./resources/images/information-campus.jpg" alt="atlas">
+        <h3>Our Campus</h3>
+        <h6>Find which campus is close to you</h6>
+        <h5><a href="#">read more</a></h5>
+      </div>
+      <div id="guest" class="flex-item">
+        <img src="./resources/images/information-guest-lecture.jpg" alt="guest speaker">
+        <h3>Our guest lecture</h3>
+        <h6>Join a keynote with Oliver sackabout music in medical treatment</h6>
+        <h5><a href="#"></a>read more</h5>
+      </div>
+    </section>
   </div>
   <!-- Start Learnig  -->
+  <div class="start-title">
+  <h1>Start Learning</h1>
+  </div>
   <div class="learnig">
-    <h1>Start Learning</h1>
-    <div class="flex-item">
+    <div class="f-item">
       <img src="./resources/images/course-software.jpg" alt="imac">
       <h2>Software engineering</h2>
       <h5>COURSES</h5>
       <h5>Web Development, Mobile Development, iOT, APIs</h5>
     </div>
-    <div class="flex-item">
-      <img src="./resources/images/course-computer-are.jpg" alt="mobile phone">
+    <div class="f-item">
+      <img src="./resources/images/course-computer-art.jpg" alt="mobile phone">
       <h2>Computer art</h2>
       <h5>COURSES</h5>
-      <h5>Imaging & Design,Web Design, Motion Graphics &Visual Effects, Computer Animation</h5>
+      <h5>Imaging & Design,Web Design, Motion Graphics & Visual Effects, Computer Animation</h5>
     </div>
-    <div class="flex-item">
+    <div class="f-item">
       <img src="./resources/images/course-design.jpg" alt="camera">
       <h2>Design</h2>
       <h5>COURSES</h5>
       <h5>User Experience Design, User Research, Visual Design</h5>
     </div>
-    <div class="flex-item">
+    <div class="f-item">
       <img src="./resources/images/course-data.jpg" alt="laptop">
       <h2>Data</h2>
       <h5>COURSES</h5>
       <h5>Data Science, Big Data, SQL, Data Visualization</h5>
     </div>
-    <div class="flex-item">
+    <div class="f-item">
       <img src="./resources/images/course-business.jpg" alt="chess peices">
       <h2>Business</h2>
       <h5>COURSES</h5>
       <h5>Product Development, Business Develpment, Startup</h5>
     </div>
-    <div class="flex-item">
+    <div class="f-item">
       <img src="./resources/images/course-marketing.jpg" alt="apple watch">
       <h2>Marketing</h2>
       <h5>COURSES</h5>
       <h5>Analytics, Content Marketing, Mobile Marketing</h5>
     </div>
   </div>
-<!-- Thesis -->
+  <!-- Thesis -->
   <div class="thesis">
     <h1>Thesis exhibit</h1>
     <div class="video">
@@ -130,7 +139,7 @@
       <h5>Research study about New York</h5>
     </div>
   </div>
-<!-- FOOTER -->
+  <!-- FOOTER -->
   <footer>
     <span class="left">&copy 2016 Colmar Academy: All rights reserved</span>
     <span class="right">Terms Privacy</span>

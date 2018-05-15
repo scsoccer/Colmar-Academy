@@ -1,9 +1,185 @@
-
 /* HTML */
+
+html {
+  font-family: 'Gothic A1', san-serif;
+  font-size: 16px;
+}
+
 .mobile ul {
   display: none;
 }
-h5
-a {
+
+h5 a {
   text-decoration: none;
+}
+
+/* HEADER  */
+
+header {
+  position: static;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  height: 4rem;
+}
+
+header h3 {
+  font-size: 2rem;
+}
+
+h3 span {
+  opacity: .5;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  padding-left: 1.5rem;
+}
+
+.desktop ul {
+  display: flex;
+  padding-right: 1.5rem;
+}
+
+nav li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .desktop ul {
+    display: none;
+  }
+  .mobile ul {
+    display: inline-flex;
+    max-width: 100%;
+  }
+}
+
+/* Main Content */
+
+.banner {
+  display: flex;
+  background-color: lightgray;
+}
+
+.banner-img img {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  top: 1rem;
+  right: 20rem;
+  bottom: 1rem;
+  width: 35%;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.text h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.text h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.start-here {
+  background-color: gray;
+}
+
+.start-here p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+/* Information */
+
+.flex-container {
+  display: flex;
+  padding-top: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section .flex-item {
+  width: 40%;
+  height: auto;
+  border: 1px solid lightgray;
+}
+
+#info h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+
+/* START LEARNING */
+
+.start-title h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+  background-color: lightgray;
+}
+
+.learnig {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  background-color: lightgray;
+}
+
+.f-item {
+  width: 33%;
+  height: auto;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.f-item img {
+  height: auto;
+  width: 100%;
+}
+.f-item h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+.f-item h5 {
+  color: lightgray;
+  line-height: 1.2;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+/* THESIS */
+
+video {
+  width: 60%;
+  height: auto;
 }
