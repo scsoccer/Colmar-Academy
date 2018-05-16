@@ -71,37 +71,36 @@ nav li {
 
 section .banner {
   display: flex;
-  background-color: lightgray;
   width: 100%;
+  background-color: lightgray;
 }
 
-.banner-img img {
-  width: 60%;
+.banner-img {
+  width: 58.5%;
   padding: 2rem 1.5rem;
 }
 
+.banner img {
+  width: 100%;
+  padding-right: 1.5rem;
+}
+
 .text {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: space-around;
-  top: 1rem;
-  right: 20rem;
-  bottom: 1rem;
-  width: 35%;
-  padding-bottom: 6rem;
-  padding-top: 6rem;
+  max-width: 40%;
 }
 
 .text h2 {
   font-weight: bold;
   font-size: 3rem;
+  padding-bottom: 1.5rem;
+  width: 80%;
 }
 
 .text h3 {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.4;
+  padding-bottom: 1.5rem;
 }
 
 .start-here {
@@ -164,10 +163,10 @@ section .flex-item {
   border: 1px solid lightgray;
 }
 
-.flex img {
+.flex-item img {
   width: 35%;
   height: auto;
-  padding: 1rem 1rem:
+  /* padding: 1rem 1rem: */
 }
 
 .flex h3 {
@@ -179,8 +178,13 @@ section .flex-item {
 .flex h6 {
   padding-bottom: 0.5rem;
 }
+
 #guest {
   background-color: darkgray;
+}
+.flex-item .info-text {
+  display: flex;
+  flex-direction: column;
 }
 
 /* START LEARNING */
@@ -229,7 +233,91 @@ section .flex-item {
 
 /* THESIS */
 
-video {
+.thesis {
+  display: flex;
+}
+
+.video {
   width: 60%;
+  padding-left: 1rem;
+}
+
+.video video {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.box-container {
+  width: 40%;
+  padding-left: 1.5rem;
+}
+
+.box img {
+  width: 35%;
   height: auto;
+  padding: 1rem 1rem;
+}
+
+.box-container .box {
+  display: inline-flex;
+  align-content: center;
+  height: 13rem;
+}
+
+.thesis-text {
+  width: :65%;
+  position: relative;
+  top: 4.5rem;
+}
+
+#fisma .thesis-text {
+  position: relative;
+  top: 3.5rem;
+}
+
+.thesis-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.t-exhibit h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+.urban h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.urban p {
+  padding-bottom: 2rem;
+}
+
+#fisma {
+  background-color: darkgray;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid darkgray;
+  height: 4rem;
+  font-size: 0.75rem;
+}
+
+footer .left {
+  float: left;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+footer .right {
+  float: right;
+  padding-top: 1rem;
 }

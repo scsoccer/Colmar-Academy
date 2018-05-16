@@ -56,23 +56,29 @@
       <h6>Emanuel, Sr Strategist at Hiring.com</h6>
     </div>
     <section class="flex">
-      <div id="orientation" class="flex-item">
+      <div class="flex-item">
         <img src="./resources/images/information-orientation.jpg" alt="walking">
-        <h3>Orientation date</h3>
-        <h6>Tue 10/11 & Wed 10/12: 8am-3pm</h6>
-        <h5><a href="#">read more</a></h5>
+        <div class="info-text">
+          <h3>Orientation date</h3>
+          <h6>Tue 10/11 & Wed 10/12: 8am-3pm</h6>
+          <h5><a href="#">read more</a></h5>
+        </div>
       </div>
-      <div id="campus" class="flex-item">
+      <div class="flex-item">
         <img src="./resources/images/information-campus.jpg" alt="atlas">
-        <h3>Our Campus</h3>
-        <h6>Find which campus is close to you</h6>
-        <h5><a href="#">read more</a></h5>
+        <div class="info-text">
+          <h3>Our Campus</h3>
+          <h6>Find which campus is close to you</h6>
+          <h5><a href="#">read more</a></h5>
+        </div>
       </div>
-      <div id="guest" class="flex-item">
+      <div class="flex-item" id="guest">
         <img src="./resources/images/information-guest-lecture.jpg" alt="guest speaker">
-        <h3>Our guest lecture</h3>
-        <h6>Join a keynote with Oliver sackabout music in medical treatment</h6>
-        <h5><a href="#">read more</a></h5>
+        <div class="info-text">
+          <h3>Our guest lecture</h3>
+          <h6>Join a keynote with Oliver sackabout music in medical treatment</h6>
+          <h5><a href="#">read more</a></h5>
+        </div>
       </div>
     </section>
   </div>
@@ -119,24 +125,34 @@
     </div>
   </div>
   <!-- Thesis -->
-  <div class="thesis">
+  <div class="t-exhibit">
     <h1>Thesis exhibit</h1>
+  </div>
+  <div class="thesis">
     <div class="video">
-      <video src="./resources/videos/thesis.mp4" autoplay></video>
+      <video autoplay>
+        <source src="./resources/videos/thesis.mp4" type="video/mp4">
+      </video>
       <div class="urban">
         <h3>Reimagine urban</h3>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. sed non accumsan urna. Phasellus sed consequat ex. etiam eget magna laoreet, efficitur dolor consequat, tristque ligula."</p>
       </div>
     </div>
-    <div id="fisma" class="box">
-      <img src="./resources/images/thesis-fisma.jpg" alt="iphone">
-      <h2>Fisma: Design and Prototype</h2>
-      <h5>Designer showcase of new prototype product</h5>
-    </div>
-    <div id="now" class="box">
-      <img src="./resources/images/thesis-now-and-then.jpg" alt="skyscraper">
-      <h2>Now and then</h2>
-      <h5>Research study about New York</h5>
+    <div class="box-container">
+      <div class="box" id="fisma">
+        <img src="./resources/images/thesis-fisma.jpg" alt="iphone">
+        <div class="thesis-text">
+          <h2>Fisma: Design and Prototype</h2>
+          <h5>Designer showcase of new prototype product</h5>
+        </div>
+      </div>
+      <div class="box">
+        <img src="./resources/images/thesis-now-and-then.jpg" alt="skyscraper">
+        <div class="thesis-text">
+          <h2>Now and then</h2>
+          <h5>Research study about New York</h5>
+        </div>
+      </div>
     </div>
   </div>
   <!-- FOOTER -->
