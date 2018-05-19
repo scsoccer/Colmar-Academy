@@ -9,7 +9,7 @@ html {
   display: none;
 }
 
-h5 a {
+a {
   text-decoration: none;
 }
 
@@ -22,42 +22,35 @@ header {
   background-color: white;
   height: 4rem;
   border-bottom: 1px solid black;
-  display: flex;
-  justify-content: center;
-}
-
-header h3 {
-  font-size: 2rem;
+  padding-right: 0.5rem;
 }
 
 h3 span {
   opacity: .5;
 }
 
-.content {
+.left-head {
   display: flex;
   align-items: center;
 }
 
-header img {
-  padding-left: 1.5rem;
-  height: 3rem;
+.left-head h3 {
+  font-size: 2rem;
 }
 
-nav ul {
+.left-head img {
+  height: 3rem;
+  padding-left: 1.5rem;
+}
+
+.desktop {
   display: flex;
-  padding-right: 1.5rem;
   justify-content: flex-end;
 }
 
-nav li {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.left-head {
-  position: relative;
-  left: 2rem;
+ul li {
+  display: inline;
+  padding-right: 1rem;
 }
 
 @media only screen and (max-width: 450px) {
@@ -122,6 +115,20 @@ nav li {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: #8598C4;
+  transition-property: background-color;
+  transition-duration: 0.6s;
+}
+p a:active {
+  color: red;
+
+}
+p a:visited {
+  color: gray;
+}
+
+.start-here p:hover {
+  background-color: #243E79;
+  color: white;
 }
 
 /* Information */
