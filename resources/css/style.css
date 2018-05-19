@@ -16,24 +16,25 @@ h5 a {
 /* HEADER  */
 
 header {
-  position: static;
+  position: fixed;
   width: 100%;
   z-index: 1;
   background-color: white;
   height: 4rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 header h3 {
   font-size: 2rem;
-  position: relative;
-  top: 1.4rem;
 }
 
 h3 span {
   opacity: .5;
 }
 
-header .content {
+.content {
   display: flex;
   align-items: center;
 }
@@ -41,20 +42,22 @@ header .content {
 header img {
   padding-left: 1.5rem;
   height: 3rem;
-  position: relative;
-  top: 1rem
 }
 
-.desktop ul {
+nav ul {
   display: flex;
   padding-right: 1.5rem;
-  position: relative;
-  left: 60rem;
+  justify-content: flex-end;
 }
 
 nav li {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.left-head {
+  position: relative;
+  left: 2rem;
 }
 
 @media only screen and (max-width: 450px) {
@@ -65,28 +68,31 @@ nav li {
     display: inline-flex;
     max-width: 100%;
   }
+  header h3 {
+    display: none;
+  }
 }
 
 /* Main Content */
 
-section .banner {
+.main-container {
+  width: 100%;
+  background-color: #8598C4;
   display: flex;
-  width: 100%;
-  background-color: lightgray;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
 }
 
-.banner-img {
-  width: 58.5%;
+.main-container img {
+  width: 60%;
   padding: 2rem 1.5rem;
-}
-
-.banner img {
-  width: 100%;
-  padding-right: 1.5rem;
+  overflow: hidden;
 }
 
 .text {
-  max-width: 40%;
+  width: 40%;
+  color: white;
 }
 
 .text h2 {
@@ -94,6 +100,7 @@ section .banner {
   font-size: 3rem;
   padding-bottom: 1.5rem;
   width: 80%;
+  line-height: 1.2;
 }
 
 .text h3 {
@@ -101,10 +108,12 @@ section .banner {
   font-size: 1.5rem;
   line-height: 1.4;
   padding-bottom: 1.5rem;
+  width: 85%;
 }
 
 .start-here {
-  background-color: hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 100%);
+  width: 75%;
 }
 
 .start-here p {
@@ -112,7 +121,7 @@ section .banner {
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: white;
+  color: #8598C4;
 }
 
 /* Information */
@@ -120,6 +129,7 @@ section .banner {
 .flex-container {
   display: flex;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .flex-container #info {
@@ -138,17 +148,22 @@ section .banner {
   padding-bottom: 1.5rem;
   padding-top: 2rem;
   padding-left: 1.5rem;
+  color: #243E79;
 }
 
 #info p {
   padding-bottom: 2.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  color: #566EA4;
 }
 
 #info h6 {
   padding-bottom: 2rem;
   padding-left: 1.5rem;
+  color: #566EA4;
+}
+
 }
 
 .flex {
@@ -160,7 +175,7 @@ section .banner {
 }
 
 section .flex-item {
-  border: 1px solid lightgray;
+  border: 1px solid #243E79;
 }
 
 .flex-item img {
@@ -180,11 +195,17 @@ section .flex-item {
 }
 
 #guest {
-  background-color: darkgray;
+  background-color: #8598C4;
 }
+
+#guest .info-text {
+  color: white;
+}
+
 .flex-item .info-text {
   display: flex;
   flex-direction: column;
+  color: #39538D;
 }
 
 /* START LEARNING */
@@ -193,7 +214,8 @@ section .flex-item {
   font-size: 3rem;
   text-align: center;
   padding-top: 2rem;
-  background-color: lightgray;
+  background-color: #8598C4;
+  color: white;
 }
 
 .learnig {
@@ -201,7 +223,7 @@ section .flex-item {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem 4rem;
-  background-color: lightgray;
+  background-color: #8598C4;
 }
 
 .f-item {
@@ -222,10 +244,11 @@ section .flex-item {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  color: #39539D;
 }
 
 .f-item h5 {
-  color: lightgray;
+  color: #243E79;
   line-height: 1.2;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
@@ -268,6 +291,7 @@ section .flex-item {
   width: :65%;
   position: relative;
   top: 4.5rem;
+  color: #39538D;
 }
 
 #fisma .thesis-text {
@@ -287,20 +311,29 @@ section .flex-item {
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-weight: bold;
+  color: #243E79;
 }
 
 .urban h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .urban p {
   padding-bottom: 2rem;
 }
 
+.urban {
+  color: #39538D;
+}
+
 #fisma {
-  background-color: darkgray;
+  background-color: #8598C4;
+}
+
+#fisma .thesis-text {
+  color: white;
 }
 
 /* FOOTER */
@@ -320,4 +353,5 @@ footer .left {
 footer .right {
   float: right;
   padding-top: 1rem;
+  padding-right: 1.5rem;
 }
