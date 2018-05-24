@@ -32,6 +32,7 @@ h3 span {
 .left-head {
   display: flex;
   align-items: center;
+  padding-top: 0.75rem;
 }
 
 .left-head h3 {
@@ -46,6 +47,8 @@ h3 span {
 .desktop {
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  top: -2rem;
 }
 
 ul li {
@@ -118,10 +121,11 @@ ul li {
   transition-property: background-color;
   transition-duration: 0.6s;
 }
+
 p a:active {
   color: red;
-
 }
+
 p a:visited {
   color: gray;
 }
@@ -135,18 +139,40 @@ p a:visited {
 
 .flex-container {
   display: flex;
-  padding-bottom: 2rem;
-  width: 100%;
+  padding: 2rem 1.5rem;
 }
 
-.flex-container #info {
+#info {
   width: 60%;
-  overflow: hidden;
 }
 
 #info img {
   width: 100%;
-  padding: 2rem 1.5rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 40%;
+}
+
+.flex-item {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.flex-item img {
+  width: 35%;
+  height: 35%;
+}
+
+.info-text {
+  width: 65%;
+  padding: 1rem 1rem;
 }
 
 #info h2 {
@@ -171,33 +197,13 @@ p a:visited {
   color: #566EA4;
 }
 
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  padding-left: 1.5rem;
-  padding-top: 2rem;
-}
-
-section .flex-item {
-  border: 1px solid #243E79;
-}
-
-.flex-item img {
-  width: 35%;
-  height: auto;
-  /* padding: 1rem 1rem: */
-}
-
-.flex h3 {
+.side-col h3 {
   font-weight: bold;
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
 }
 
-.flex h6 {
+.side-col h6 {
   padding-bottom: 0.5rem;
 }
 
@@ -209,10 +215,23 @@ section .flex-item {
   color: white;
 }
 
-.flex-item .info-text {
-  display: flex;
-  flex-direction: column;
+#guest img {
+  padding-top: 2.5rem;
+}
+
+.info-text {
   color: #39538D;
+}
+
+.info-text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.info-text h5 {
+  font-weight: bold;
+  padding-top: 0.5rem;
 }
 
 /* START LEARNING */
@@ -270,6 +289,7 @@ section .flex-item {
 .video {
   width: 60%;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .video video {
@@ -277,39 +297,21 @@ section .flex-item {
   padding-bottom: 1.5rem;
 }
 
-.box-container {
-  width: 40%;
-  padding-left: 1.5rem;
-}
-
-.box img {
-  width: 35%;
-  height: auto;
-  padding: 1rem 1rem;
-}
-
-.box-container .box {
-  display: inline-flex;
-  align-content: center;
-  height: 13rem;
-}
-
-.thesis-text {
-  width: :65%;
-  position: relative;
-  top: 4.5rem;
-  color: #39538D;
-}
-
-#fisma .thesis-text {
-  position: relative;
-  top: 3.5rem;
-}
-
 .thesis-text h2 {
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 1rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.box img {
+  height: 35%;
+  width: 35%;
+  padding: 1rem;
 }
 
 .t-exhibit h1 {
